@@ -5,10 +5,7 @@ module.exports = {
   context: path.join(__dirname, '../client'),
   devtool: 'inline-source-map',
   entry: [
-    'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/only-dev-server',
-    './src/client.js'
+    './src/client.js',
   ],
   output: {
     path: path.join(__dirname, '../client/public'),
