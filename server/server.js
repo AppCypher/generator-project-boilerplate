@@ -21,8 +21,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(upath.join(__dirname, '/../../client/public')));
 
-// Simple GET route for index.html
-app.get('/', (req, res) => {
+// Let React Router handle all routes
+app.use('/', (req, res) => {
   res.sendFile(upath.join(__dirname, '/../../client/public/index.html'));
 });
 
