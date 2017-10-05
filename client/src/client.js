@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/Header';
+import { BrowserRouter } from 'react-router-dom';
 
-class Layout extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>This works! </h1> 
-        <Header name={'Hello'}/> 
-      </div>
-    );
-  }
-}
+import style from '../res/css/bootstrap.css';
+import style2 from '../res/scss/main.scss';
 
-const app = document.getElementById('app');
-ReactDOM.render(<Layout />, app);
+import App from './pages/App';
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('app'),
+);
