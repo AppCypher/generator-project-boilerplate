@@ -1,0 +1,8 @@
+// reseting css
+@import 'reset';
+
+// normalizing font-size
+html { font-size: 62.5%; } 
+
+// making sure is paddings and margins is factored in when speciying widths and heights
+html { box-sizing: border-box; }
